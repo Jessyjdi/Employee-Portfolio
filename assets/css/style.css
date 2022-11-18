@@ -174,10 +174,22 @@ font-family: Helvetica, Arial, sans-serif;
 
 }
 
-@media screen and (min-width: 768px) {
-   /* on tablets, set columns to only be 50% of the width and not grow */
-   .card-column {
-     flex: 0 0 50%;
-     max-width: 50%;
+@media screen and (max-width: 992px) {
+   .flex-container {
+     width: 50%;
    }
-}
+   /* Change the header color */
+   header {
+     background: #772014;
+   }
+ }
+ @media screen and (max-width: 768px) {
+   .flex-container {
+     width: 100%;
+   }
+   /* Change the header color */
+   header {
+     background: #8ac4ff;
+   }
+ }
+ 
